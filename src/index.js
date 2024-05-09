@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import Home from './components/Home/Home';
+import reportWebVitals from './reportWebVitals';//method console & terminal ---> warning show
+import { BrowserRouter } from 'react-router-dom';// bowser pe dispaly  bowserrouter -- js ko html me represent karta he  
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <BrowserRouter>
+      <App />  
+    
+  
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
